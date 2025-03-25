@@ -8,13 +8,13 @@ package librarymanagmentsystem;
  *
  * @author colmj
  */
-public class User {
-
+/**
+ * This interface defines a user with a menu display functionality.
+ */
+public interface User {
     /**
-     * @param args the command line arguments
+     * Displays the user menu.
      */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
-    
+    void displayMenu();
 }
+

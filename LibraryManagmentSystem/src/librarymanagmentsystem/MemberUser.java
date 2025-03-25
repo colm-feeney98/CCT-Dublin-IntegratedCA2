@@ -8,13 +8,17 @@ package librarymanagmentsystem;
  *
  * @author colmj
  */
-public class MemberUser {
+/**
+ * The MemberUser class implements the User interface.
+ *  represents a user with member privileges, such as borrowing and returning books.
+ */
+public class MemberUser implements User { 
 
     /**
-     * @param args the command line arguments
+     * Displays the menu options available to a member user.
      */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    public void displayMenu() {
+        System.out.println("Member Panel: 1. Borrow/Return Books, 2. View Issued Books");
     }
-    
 }
+
