@@ -9,12 +9,11 @@ package librarymanagmentsystem;
  * @author colmj
  */
 public class UserFactory {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    public static User getUser(String role) {
+        switch (role.toLowerCase()) {
+            case "admin": return new AdminUser();
+            case "member": return new MemberUser();
+            default: throw new IllegalArgumentException("Invalid role");
+        }
     }
-    
 }
