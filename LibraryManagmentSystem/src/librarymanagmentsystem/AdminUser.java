@@ -8,13 +8,9 @@ package librarymanagmentsystem;
  *
  * @author colmj
  */
-public class AdminUser {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+/** Admin class extends user*/
+public class AdminUser implements User {
+    public void displayMenu() {
+        System.out.println("Admin Panel: 1. Manage Books, 2. Manage Users");
     }
-    
 }
